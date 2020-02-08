@@ -4,5 +4,5 @@ from register.models import User
 
 class RatingSer(serializers.ModelSerializer):
 	class Meta:
-		model = User
-		fields = "__all__"
+ 		model = Rating
+ 		fields = ["user","poiID","type"] 

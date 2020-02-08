@@ -1,3 +1,6 @@
-from builder.similirity import Predictions
+#from builder.similirity import Predictions
 
-Predictions.startGenerating()
+#Predictions.startGenerating()
+
+
+
