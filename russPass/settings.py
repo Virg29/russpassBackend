@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'channels',
+    #'builder',
     #rest
     'rating',
     'register',
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     #sockets
     'groupNotifier',
     'eventNotifier',
+    #
 ]
 
 MIDDLEWARE = [
