@@ -129,4 +129,4 @@ STATIC_URL = '/static/'
 
 # implimenting asgi
 
-ASGI_APPLICATION = 'apiRuss.routing.application'
+ASGI_APPLICATION = 'russPass.routing.application'
