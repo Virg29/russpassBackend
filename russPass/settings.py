@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     #rest
     'rating',
     'register',
+    'quiz',
+    'group',
     #sockets
     'groupNotifier',
     'eventNotifier',
