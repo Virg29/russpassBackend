@@ -15,6 +15,6 @@ def getSimilar(request):
 	print(childs)
 	return Response({"status": Predictions.getPrediction(1)})
 
-class ActionHandler(generics.CreateAPIView):
+class ActionHandler(generics.ListAPIView):
 	serializer_class = RatingSer
-	queryset = Rating.objects.all()
+	queryset = User.objects.select_related().all()
