@@ -25,7 +25,7 @@ SECRET_KEY = '%!zbrm#%v&oxq369lf%=hvop073wpkv(b)67dhdv4r1b&u9e)z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.43.232']
 
 
 # Application definition
@@ -39,12 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'channels',
+    'builder',
     #rest
     'rating',
     'register',
+    'quiz',
+    'group',
     #sockets
     'groupNotifier',
     'eventNotifier',
+    #
 ]
 
 MIDDLEWARE = [
@@ -83,8 +87,12 @@ WSGI_APPLICATION = 'russPass.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'russpass',
+        'USER': 'worker',
+        'PASSWORD': 'lightpass',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
